@@ -34,8 +34,6 @@ describe('test banking project', () => {
     mainpage.getBalanceAmount()
       .should('have.text', '115');
 
-    cy.wait(4000); // waiter to be able to see transaction logs
-
     mainpage.clickTransactionWidget();
     mainpage.isTransactionTableVisible();
 
